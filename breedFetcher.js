@@ -10,7 +10,7 @@ request(`https://api.thecatagpi.com/v1/breeds/search?q=${breedName}`, (error, re
     const data = JSON.parse(body);
     const breed = data[0];
     if (!breed) {
-      console.log(`the requested breed, ${breedName} was not found.`)
+      console.log(`the requested breed, ${breedName} was not found.`);
     } else {
       console.log(breed.description);
     }
